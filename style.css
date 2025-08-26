@@ -1,0 +1,109 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #1e1e2f;
+  color: #eee;
+  display: flex;
+  height: 100vh;
+}
+
+/* Layout */
+.layout {
+  display: flex;
+  width: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background: #2a2a40;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sidebar .perfil {
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+.sidebar nav ul {
+  list-style: none;
+  text-align: center;
+}
+.sidebar nav ul li {
+  margin: 1rem 0;
+}
+.sidebar nav ul li a {
+  color: #ccc;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+.sidebar nav ul li a:hover {
+  color: #ff6ec7;
+}
+
+/* Contenido */
+.content {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
+.content h1, .content h2 {
+  color: #ff6ec7;
+  margin-bottom: 1rem;
+}
+.highlight {
+  color: #79d2ff;
+}
+section {
+  margin-bottom: 3rem;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  gap: 1rem;
+}
+.card {
+  background: #2f2f48;
+  padding: 1rem;
+  border-radius: 8px;
+  flex: 1;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+/* Tags */
+.tags {
+  margin: 0.5rem 0 1.5rem 0;
+}
+.tag {
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  margin: 0.2rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: white;
+}
+.tag.html { background: #e34c26; }
+.tag.css { background: #264de4; }
+.tag.js { background: #f0db4f; color: #000; }
+.tag.python { background: #3572A5; }
+.tag.django { background: #092e20; }
+.tag.bootstrap { background: #563d7c; }
+.tag.react { background: #61dafb; color: #000; }
+.tag.vscode { background: #0078d7; }
+.tag.git { background: #f1502f; }
+.tag.excel { background: #217346; }
+
+/* Contacto */
+#contact a {
+  color: #79d2ff;
+  text-decoration: none;
+}
+#contact a:hover {
+  text-decoration: underline;
+}
